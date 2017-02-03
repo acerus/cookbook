@@ -14,6 +14,12 @@
  * @package WordPress
  */
 
+error_reporting(0);
+ini_set('display_errors', 0);
+define('FS_METHOD', 'direct');
+// error_reporting(E_ALL ^ E_DEPRECATED);
+
+
 // Include local configuration
 if (file_exists(dirname(__FILE__) . '/local-config.php')) {
 	include(dirname(__FILE__) . '/local-config.php');
@@ -90,7 +96,7 @@ define('WPLANG', '');
  * These are required because wordpress is installed in a subdirectory.
  */
 if (!defined('WP_SITEURL')) {
-	define('WP_SITEURL', 'https://' . $_SERVER['SERVER_NAME'] . '/wordpress');
+	define('WP_SITEURL', 'https://' . $_SERVER['SERVER_NAME'] . '/WordPress');
 }
 if (!defined('WP_HOME')) {
 	define('WP_HOME',    'https://' . $_SERVER['SERVER_NAME'] . '');
@@ -110,7 +116,7 @@ if (!defined('WP_CONTENT_URL')) {
  * in their development environments.
  */
 if (!defined('WP_DEBUG')) {
-	define('WP_DEBUG', true);
+	define('WP_DEBUG', false);
 }
 
 // define('DISABLE_WP_CRON', true);
