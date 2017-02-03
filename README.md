@@ -1,5 +1,4 @@
-# charlie-jackson-website
-Wodpress site for charliejackson.com
+# Cookbook
 
 Make sure docker and docker compose are both installed on the system you wish to use this site with.
 
