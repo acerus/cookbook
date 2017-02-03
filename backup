@@ -1,0 +1,13 @@
+#!/bin/sh
+
+NOW=$(date +"%s")
+DB_PATH=$PWD/backups/db/$NOW.sql
+CONTENT_PATH=$PWD/backups/content/$NOW
+
+mkdir -p $PWD/backups
+mkdir -p $PWD/backups/db
+mkdir -p $PWD/backups/content
+mkdir -p $CONTENT_PATH
+
+docker exec db sh -c 'exec mysqldump --all-databases -uroot -p"$MYSQL_ROOT_PASSWORD"' > `echo $DB_PATH`
+cp -r $PWD/content/uploads $CONTENT_PATH

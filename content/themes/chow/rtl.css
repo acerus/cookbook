@@ -1,0 +1,51 @@
+/*
+Theme Name: Chow
+
+Description: Adds support for languages written in a Right To Left (RTL) direction.
+It's easy, just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+http://codex.wordpress.org/Right_to_Left_Language_Support
+
+*/
+
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+
+.menu > ul li {
+  float: right;
+}
+
+.featured-recipe-content {
+	right: 20px
+}
+.post-icon {
+	left: 0px;
+	right: inherit;
+}
+.rtl .author-box img {
+	right: auto;
+	left: 25px;
+}
+@media only screen and (min-width: 960px) and (max-width: 1389px) {
+	.list-style .recipe-box-content             { width: 445px; margin-right: 235px; margin-left: 0px }
+}
+
+.post-meta a { margin-right: 5px;}
+
+.comment-by a.comment-reply-link {
+	left: 0px;
+	right: inherit;
+}
+
+#footer .widget > ul > li:before, #footer .widget_nav_menu li:before, #footer .widget_archive li:before {
+	margin-left: 5px
+}
+
+.recipe-header span a {
+	right: 105px;
+}

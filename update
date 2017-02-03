@@ -1,0 +1,7 @@
+#!/bin/sh
+
+./backup
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+git pull
+docker-compose up -d --force-recreate --build

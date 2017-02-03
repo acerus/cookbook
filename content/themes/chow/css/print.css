@@ -1,0 +1,123 @@
+@media print {
+    body.boxed,
+    body {
+        background: #fff none !important;
+        color: #000;
+        font: 10pt/1.5 Arial, sans-serif;
+        margin: 0px;  
+        width: 100%;
+    }
+    h3.recipe-title {
+        display: block;
+    }
+    .foodiepress {
+        display:inline; width:100%; padding: 0
+    }
+    .entry-title {
+        font-size: 21pt;
+    }
+    .container .twelve.columns {
+        width: auto;
+        float: none;
+    }
+    .alignment {position: static;}
+    #header,
+    #footer,
+    .recipe-header,
+    .foodiepress-wrapper.recipe1 .ingredients::before, 
+    .foodiepress-wrapper.recipe1 .ingredients::after, 
+    .recipeBackground,
+    .sidebar,
+    .related-posts,
+    .navigation,
+    .comments,
+    .print,
+    .share-post,
+    .recipeSlider,
+    .button,
+    .post-meta,
+    #footer-bottom,
+    #branding img,
+    #respond,
+    .comment-edit-link,
+    .edit-link,
+    .navigation,
+    .page-link,
+    .widget-area {
+        display: none !important;
+    }
+    .foodiepress-wrapper.recipe2 .recipe-details {
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 20px;
+    }
+  
+    .wp-caption p {
+        font-size: 11pt;
+    }
+    .foodiepress-wrapper.recipe2 .recipe-details ul li,
+    .foodiepress-wrapper.recipe1 .ingredients li:first-child,
+    .foodiepress-wrapper.recipe1 .recipe-details ul li {
+        border:0px;
+    }
+    #entry-author-info {
+        border: 1px solid #e7e7e7;
+    }
+    .single .post-meta {
+        float: none;text-align: left; width: 100%
+    }
+    
+    .foodiepress-wrapper.recipe1 .ingredients li { 
+        padding-left:45px;
+        border:0px;
+    }
+    
+    .foodiepress-wrapper.recipe1 .ingredients li.separator {
+        padding-left: 45px;
+    }
+     .foodiepress-wrapper.recipe1 .ingredients li:before {
+        left: 15px;
+     }
+    .single .post-meta span { float: none;}
+
+    .foodiepress-wrapper.recipe2 .directions-container,
+    .foodiepress-wrapper.recipe2 .ingredients-container,
+    .foodiepress-wrapper.recipe2 .recipe-container {
+        margin: 0px;
+        padding: 0px
+    }
+    .foodiepress-wrapper.recipe1 .ingredients {
+        border: 0px;
+        margin:0px;
+        padding:0px;
+    }
+    .container,
+    .container .columns,
+    .container .column,
+    .container .one.column,
+    .container .one.columns,
+    .container .two.columns,
+    .container .three.columns,
+    .container .four.columns,
+    .container .five.columns,
+    .container .six.columns,
+    .container .seven.columns,
+    .container .eight.columns,
+    .container .nine.columns,
+    .container .ten.columns,
+    .container .eleven.columns,
+    .container .twelve.columns,
+    .container .thirteen.columns,
+    .container .fourteen.columns,
+    .container .fifteen.columns,
+    .container .sixteen.columns,
+    .container .one-third.column,
+    .container .two-thirds.column,
+    .container .twelve.sidebar-right.columns,
+    .container .twelve.sidebar-left.columns,
+    .container .five.sidebar-right.columns,
+    .container .eleven.sidebar-right.columns { width: 100%; float: none; overflow: visible; margin: 0; }
+
+
+    
+}
