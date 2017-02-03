@@ -5,7 +5,7 @@ services:
      container_name: db
      image: mysql:5.7
      volumes:
-       - db_data:/var/lib/mysql
+       - cookbook_db:/var/lib/mysql
      restart: always
      environment:
        MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
@@ -30,4 +30,4 @@ services:
      volumes:
        - ./content:/var/www/html/content
 volumes:
-    db_data:
+    cookbook_db:
