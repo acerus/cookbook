@@ -9,5 +9,5 @@ mkdir -p $PWD/backups/db
 mkdir -p $PWD/backups/content
 mkdir -p $CONTENT_PATH
 
-docker exec db sh -c 'exec mysqldump --all-databases -uroot -p"$MYSQL_ROOT_PASSWORD"' > `echo $DB_PATH`
+docker exec cookbook_db sh -c 'exec mysqldump --all-databases -uroot -p"$MYSQL_ROOT_PASSWORD"' > `echo $DB_PATH`
 docker cp cookbook_web:/var/www/html/content/uploads $CONTENT_PATH
