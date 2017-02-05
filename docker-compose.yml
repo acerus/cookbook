@@ -6,7 +6,7 @@ services:
      image: mysql:5.7
      volumes:
        - cookbook_db:/var/lib/mysql
-       - ./data-dump.sql:/docker-entrypoint-initdb.d/data-dump.sql
+       #- ./data-dump.sql:/docker-entrypoint-initdb.d/data-dump.sql
      restart: always
      environment:
        MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
