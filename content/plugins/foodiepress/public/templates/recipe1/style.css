@@ -1,0 +1,302 @@
+/*
+* Minimal recipe Theme
+*/
+.foodiepress-wrapper.recipe1 a.nutrition-btn {
+    float: right;
+    margin-right: 10px;
+    margin-top: 1px;
+    padding: 5px 10px;
+}
+
+.foodiepress-wrapper.recipe1 .author-data {
+    display: none;
+}
+.foodiepress-wrapper.recipe1 .recipe-image {
+    display: none;
+}
+
+.foodiepress-wrapper.recipe1 .recipe-details {
+    background-color: #f8f8f8;
+    padding: 20px 23px 20px 35px;
+    margin-bottom: 20px;
+}
+
+.foodiepress-wrapper.recipe1 .recipe-details ul li {
+    display: inline;
+    float: left;
+    margin-right: 21px;
+    padding-right: 21px;
+    border-right: 1px solid #d8d8d8;
+}
+
+.foodiepress-wrapper.recipe1 .recipe-details ul li:last-child { border: none; margin-right: 0px; }
+.foodiepress-wrapper.recipe1 .recipe-details ul li strong { display: block; }
+
+
+/* Print Button */
+.foodiepress-wrapper.recipe1 a.print {
+    background-color: #808080;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    display: inline-block;
+    float: right;
+    margin-top: 1px;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+
+.foodiepress-wrapper.recipe1 a.print:hover { background-color: #555; }
+.foodiepress-wrapper.recipe1 a.print i { font-size: 14px; margin-right: 2px; }
+
+
+
+/* Ingredients
+------------------------------------- */
+.foodiepress-wrapper.recipe1 .ingredients {
+    background-color: #fff;
+    border: 1px solid #e9e9e9;
+    padding: 39px 0;
+    position: relative;
+    margin: 12px 0 35px 0;
+    list-style: none;
+}
+
+.foodiepress-wrapper.recipe1 .ingredients li {
+    border-bottom: 1px solid #e9e9e9;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 7px 0 8px 120px;
+    position: relative;
+}
+
+.foodiepress-wrapper.recipe1 .ingredients li:first-child { border-top: 1px solid #e9e9e9; }
+
+.foodiepress-wrapper.recipe1 .ingredients:before,
+.foodiepress-wrapper.recipe1 .ingredients:after {
+    content:"";
+    height: 100%;
+    width: 1px;
+    background-color: #ffd4d4;
+    position: absolute;
+    top: 0;
+}
+
+.foodiepress-wrapper.recipe1 .ingredients:before { left: 70px; }
+.foodiepress-wrapper.recipe1 .ingredients:after { left: 74px; }
+.foodiepress-wrapper.recipe1 .ingredients li { padding-left: 150px; }
+
+
+/* Custom Checkbox */
+.foodiepress-wrapper.recipe1 .ingredients li {
+    cursor: pointer;
+}
+
+
+.foodiepress-wrapper.recipe1 .ingredients li:before {
+    content: "";
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin-right: 10px;
+    position: absolute;
+    left: 115px;
+    top: 7px;
+    background-color: #fff;
+    border: 2px solid #d0d0d0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.foodiepress-wrapper.recipe1 .ingredients li.separator:before {
+    content: none;
+}
+    
+.foodiepress-wrapper.recipe1 .ingredients li.separator {
+    padding-left: 115px;
+    font-weight: 600;
+    cursor: default;
+    color: #666;
+}
+
+.foodiepress-wrapper.recipe1 .ingredients li.active span {
+    text-decoration: line-through;
+}
+
+.foodiepress-wrapper.recipe1 .ingredients li.active:before  {
+    content: "";
+    font-family: "FontAwesome";
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+    background-color: #808080;
+    border: 2px solid #808080;
+}
+
+.foodiepress-wrapper.recipe1 .ingredients input[type=checkbox]:checked + label { text-decoration: line-through; }
+
+
+/* Directions
+------------------------------------- */
+
+.foodiepress-wrapper.recipe1 .instructions ul {
+    list-style: none;
+}
+.foodiepress-wrapper.recipe1 .instructions ul > li {
+    position: relative;
+    padding: 10px 0px
+}
+.foodiepress-wrapper.recipe1 .instructions ul li.active {
+    text-decoration: line-through;
+}
+.foodiepress-wrapper.recipe1 .instructions ul  > li:before {
+    content: "";
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin-right: 10px;
+    position: absolute;
+    left: -30px;
+    top: 7px;
+    background-color: #fff;
+    border: 2px solid #d0d0d0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.foodiepress-wrapper.recipe1 .instructions ul > li.active:before {
+    content: "";
+    font-family: "FontAwesome";
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+    background-color: #808080;
+    border: 2px solid #808080;
+}
+
+
+.foodiepress-wrapper.recipe1 .instructions ol {
+    list-style-type: none;
+    list-style-type: decimal !ie; /*IE 7- hack*/
+    margin: 15px 0 0 34px;
+    padding: 0;
+    counter-reset: li-counter;
+}
+
+.foodiepress-wrapper.recipe1 .instructions ol > li {
+    position: relative;
+    margin-bottom: 15px;
+    padding: 8px 14px;
+    line-height: 24px;
+}
+
+.foodiepress-wrapper.recipe1 .instructions ol > li:last-child { margin-bottom: 35px; }
+
+.foodiepress-wrapper.recipe1 .instructions ol > li:before {
+    position: absolute;
+    top: 3px;
+    left: -34px;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    line-height: 32px;
+    color: #999;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    content: counter(li-counter);
+    counter-increment: li-counter;
+    cursor: default;
+}
+
+
+/* Alternative Recipe Look
+------------------------------------- */
+.foodiepress-wrapper.recipe1 .ingredients-container,
+.foodiepress-wrapper.recipe1 .directions-container {
+    float: none;
+    padding: 30px 35px 0 35px;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.foodiepress-wrapper.recipe1 .recipe-container       { display: table; margin: 15px 0 35px 0; }
+.foodiepress-wrapper.recipe1 .ingredients-container  { display: table-cell; background-color: #f8f8f8; width: 42%; }
+.foodiepress-wrapper.recipe1 .directions-container   { display: table-cell; background-color: #fff; width: 58%; }
+
+.foodiepress-wrapper.recipe1 .ingredients-container .ingredients {
+    background-color: #f8f8f8;
+    border: none;
+    padding: 0;
+    position: relative;
+    margin: 15px 0 0 0;
+    list-style: none;
+}
+
+.foodiepress-wrapper.recipe1 .ingredients a{
+    color: #808080;
+    position: relative;
+}
+
+.foodiepress-wrapper.recipe1 .ingredients a:after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    border-bottom: 1px dotted #a0a0a0;
+    display: inline-block;
+}
+
+.foodiepress-wrapper.recipe1 .ingredients a:hover:after { border-color: #8dc63f; }
+
+.foodiepress-wrapper.recipe1 .ingredients-container .ingredients:before,
+.foodiepress-wrapper.recipe1 .ingredients-container .ingredients:after { display: none; }
+
+.foodiepress-wrapper.recipe1 .ingredients-container .ingredients li {
+    border: none;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 7px 0;
+}
+
+.foodiepress-wrapper.recipe1 .ingredients-container .ingredients li:last-child { padding-bottom: 35px; }
+
+.foodiepress-wrapper.recipe1 .review { display: none; }
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+        .foodiepress-wrapper.recipe1 .ingredients:before { left: 60px; }
+        .foodiepress-wrapper.recipe1 .ingredients:after { left: 64px; }
+        .foodiepress-wrapper.recipe1 .ingredients li:before { left: 110px;}
+        .foodiepress-wrapper.recipe1 .ingredients li { padding-left: 140px; }
+    }
+
+@media only screen and (max-width: 768px) {
+
+    .foodiepress-wrapper.recipe1 .ingredients { padding: 30px 0px;}
+    .foodiepress-wrapper.recipe1 .ingredients li:first-child { border: none; }
+    .foodiepress-wrapper.recipe1 .ingredients li:before { left: 30px; }
+    .foodiepress-wrapper.recipe1 .ingredients li { padding-left: 60px; position: relative; border: none;}
+    .foodiepress-wrapper.recipe1 .ingredients li.separator { padding-left: 60px; }
+    .foodiepress-wrapper.recipe1 .ingredients-container,
+    .foodiepress-wrapper.recipe1 .directions-container   { display: block; width: 100%; }
+    .foodiepress-wrapper.recipe1 .directions-container   { padding-left: 0; padding-bottom: 0; }
+    .foodiepress-wrapper.recipe1 .recipe-container { margin-bottom: 0; }
+    .post-content .foodiepress-wrapper.recipe1 .recipe-details ul { margin-bottom: 15px; overflow: hidden;}
+    .foodiepress-wrapper.recipe1 a.print { float: left; margin-right: 15px;}
+    .foodiepress-wrapper.recipe1 a.nutrition-btn { float: left; }
+}

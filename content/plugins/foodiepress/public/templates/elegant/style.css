@@ -1,0 +1,188 @@
+
+/*
+* Elegant recipe Theme
+*/
+.purerecipe-wrapper.elegant {
+    background:#f4f2e5;
+    padding: 20px;
+    border:1px solid rgba(0,0,0,0.1);
+    box-shadow:0px 0px 3px #ddd;
+}
+
+.elegant .purerecipe{
+    margin:0px;
+    border:1px solid rgba(0,0,0,0.1);
+}
+
+.elegant header {
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 3px 3px 3px 3px;
+    margin: 1px;
+    padding-top: 20px;
+    text-align: center;
+    text-shadow:0px 1px 0px #fff;
+    position:relative;
+}
+
+.elegant header:after {
+    background: url("images/ornaments.png") no-repeat scroll right top transparent;
+    content: "";
+    display: block;
+    height: 33px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 35px;
+    z-index: 9999;
+}
+
+.elegant header:before {
+    background: url("images/ornaments.png") no-repeat scroll left top transparent;
+    content: "";
+    display: block;
+    height: 33px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 35px;
+    z-index: 9999;
+}
+
+.elegant header h3 {
+    font-size: 20px;
+    padding: 20px 0 5px;
+    font-weight:normal;
+    margin-bottom: 0px;
+}
+
+.elegant p.author-data {
+    padding: 0px;
+    font-size: 11px;
+    font-style: italic;
+}
+
+
+.elegant  h4 {
+    margin:0px 0px 15px;
+    padding:15px 0px 0px 0px;
+    font-size:24px;
+    font-weight: normal;
+}
+
+
+.elegant em {
+    background:none;
+}
+
+.elegant .recipe-desc{
+    font-size:14px;
+}
+
+.elegant  ul.recipe-metadata {
+    overflow:hidden;
+    margin:0px;
+}
+
+.elegant .recipe-metadata li {
+    float:left;
+    margin-right:5px;
+}
+
+.elegant ul.ingredients {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.elegant .instructions ul li,
+.elegant ul.ingredients li {
+    background: url("images/checkbox-el.png") no-repeat scroll left 6px transparent;
+    padding-left:20px;
+    cursor: pointer;
+}
+.rtl .elegant .instructions ul li,
+.rtl .elegant ul.ingredients li {
+    background: url("images/checkbox-el.png") no-repeat scroll right 6px transparent;
+    padding-left:0px;
+    padding-right:20px;
+}
+
+.rtl .elegant ul.ingredients li.separator {
+    padding-right: 0;
+}
+.elegant ul.ingredients li.separator {
+      background: none repeat scroll 0 0 transparent;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+    padding-left: 0;
+}
+
+.elegant .instructions ul li.active,
+.elegant ul.ingredients li.active {
+    background: url("images/checkbox-checked-el.png") no-repeat scroll left 3px transparent;
+    padding-left:20px;
+    text-decoration: line-through
+}
+.rtl .elegant .instructions ul li.active,
+.rtl .elegant ul.ingredients li.active {
+    background: url("images/checkbox-checked-el.png") no-repeat scroll right 3px transparent;
+    padding-left:0px;
+    padding-right:20px;
+    text-decoration: line-through
+}
+.elegant .recipe-add-data {
+    background: url("images/double-line.png") repeat-x scroll center bottom transparent;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+.elegant .instructions ul,
+.elegant ul.ingredients {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.elegant .recipe-image {
+    background: rgba(0,0,0,0.1);
+    float: right;
+    margin: 0px;
+    padding: 5px;
+    box-shadow:1px 1px 0px #fff;
+    position: static;
+}
+.rtl .elegant .recipe-image {
+    margin-left: 20px;
+}
+.elegant .recipe-content {
+    border: 1px solid rgba(0,0,0,0.1);
+    margin: 1px;
+    position:relative;
+    padding: 20px 20px 45px;
+    font-size:14px;
+    overflow: visible;
+}
+
+ .purerecipe.elegant h3 {
+    width:100%
+}
+.elegant .recipe-content:after {
+    background: url("images/ornaments.png") no-repeat scroll right bottom transparent;
+    content: "";
+    display: block;
+    height: 33px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 35px;
+    z-index: 9999;
+}
+.elegant .recipe-content:before {
+    background: url("images/ornaments.png") no-repeat scroll left bottom transparent;
+    content: "";
+    display: block;
+    height: 33px;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    width: 35px;
+    z-index: 9999;
+}

@@ -1,0 +1,147 @@
+@import url("font-awesome.css");        /* Font Awesome Icons */
+/* Social Icons
+------------------------------------*/
+.pt-followers-icons.share-buttons {
+    position: relative;
+    width: 105%;
+    overflow: hidden;
+}
+
+ul.pt-followers-icons.share-buttons li {
+    color: #fff;
+    width: 31%;
+    text-align: center;
+    padding: 15px 0;
+    display: inline-block;
+    float: left;
+    margin: 0 5px 5px 0;
+    position: relative;
+    z-index: 97;
+    overflow: hidden;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+@media only screen and (max-width: 1389px) {
+    ul.pt-followers-icons.share-buttons li {
+        width: 47%;
+    }
+}
+
+.sidebar .widget ul li.pt-followers-icons.share-buttons a,
+.widget ul li.pt-followers-icons.share-buttons a,
+ul.pt-followers-icons.share-buttons li a { color: #fff !important; }
+
+ul.pt-followers-icons.share-buttons li:before {
+    font-family: "FontAwesome";
+    font-size: 28px;
+    display: block;
+    height: 30px;
+    padding: 10px 0 0 0;
+}
+
+ul.pt-followers-icons.share-buttons li span { display: block; }
+
+.pt-followers-icons .counter { font-weight: 700; font-size: 16px; }
+.pt-followers-icons .counted {  font-size: 13px; }
+
+ul.pt-followers-icons.share-buttons li a:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    display: block;
+    z-index: 99;
+    content:"";
+}
+
+ul.pt-followers-icons.share-buttons li span.action-button {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom:10px;
+    left:50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-weight: 700;
+    font-size: 13px;
+    background-color: rgba(255,255,255,0.2);
+    padding: 5px 10px;
+    display: inline-block;
+    width: auto;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+ul.pt-followers-icons.share-buttons li span.counter,
+ul.pt-followers-icons.share-buttons li span.counted {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    -ms-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+
+}
+
+ul.pt-followers-icons.share-buttons li:hover span.action-button {
+    visibility: visible;
+    opacity: 1;
+    bottom: 15px;
+}
+
+ul.pt-followers-icons.share-buttons li:hover span.counter,
+ul.pt-followers-icons.share-buttons li:hover span.counted {
+    opacity:0;
+    visibility: hidden;
+    -webkit-transform: translateY(-25%);
+    -ms-transform: translateY(-25%);
+    transform: translateY(-25%);
+}
+
+
+/* Each Styles */
+.pt-followers-icons .facebook-share { background-color: #3b5998; }
+.pt-followers-icons .facebook-share:before { content: ""; }
+
+.pt-followers-icons .twitter-share { background-color: #33bcf3; }
+.pt-followers-icons .twitter-share:before { content: ""; }
+
+.pt-followers-icons .google-plus-share { background-color: #dd4b39; }
+.pt-followers-icons .google-plus-share:before { content: ""; }
+
+.pt-followers-icons .pinterest-share { background-color: #cc2127; }
+.pt-followers-icons .pinterest-share:before { content: ""; }
+
+.pt-followers-icons .behance-share { background-color: #1769ff; }
+.pt-followers-icons .behance-share:before { content: ""; }
+
+.pt-followers-icons .dribbble-share { background-color: #ea4c89; }
+.pt-followers-icons .dribbble-share:before { content: ""; }
+
+.pt-followers-icons .instagram-share { background-color: #3f729b; }
+.pt-followers-icons .instagram-share:before { content: ""; }
+
+.pt-followers-icons .linkedin-share { background-color: #0976b4; }
+.pt-followers-icons .linkedin-share:before { content: ""; }
+
+.pt-followers-icons .github-share { background-color: #4183c4; }
+.pt-followers-icons .github-share:before { content: ""; }
+
+.pt-followers-icons .youtube-share { background-color: #e52d27; }
+.pt-followers-icons .youtube-share:before { content: ""; }
+
+.pt-followers-icons .pinterest0share { background-color: #cc2127; }
+.pt-followers-icons .pinterest-share:before { content: ""; }
+

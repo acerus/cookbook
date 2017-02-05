@@ -1,0 +1,131 @@
+/*
+* Minimal recipe Theme
+*/
+
+.purerecipe-wrapper.minimal {
+    padding:0px;
+    margin:0px;
+}
+
+.minimal .purerecipe {
+    margin:0px;
+}
+
+.minimal .purerecipe header {
+    padding: 20px 0px 20px;
+    position:relative;
+}
+
+.minimal p.author-data {
+    padding: 0px;
+    font-size: 11px;
+    font-style: italic;
+}
+
+.minimal .recipe-top-content {
+    overflow: hidden;
+}
+
+.minimal .purerecipe header h3 {
+    font-size: 20px;
+    padding: 20px 0 5px;
+    font-weight:normal;
+    margin-bottom: 0px;
+}
+
+.minimal .purerecipe h4 {
+   margin:0px 0px 15px;
+   padding:15px 0px 0px 0px;
+   font-size: 18px;
+   font-style: italic;
+
+}
+
+.minimal .purerecipe em {
+    background:none;
+}
+.minimal .purerecipe .recipe-desc {
+    font-size:14px;
+}
+
+.minimal .purerecipe ul.recipe-metadata {
+    overflow:hidden;
+    margin:0px;
+}
+
+.minimal .purerecipe   .recipe-metadata li {
+    float:left;
+    margin-right:5px;
+}
+
+.minimal .purerecipe  .instructions ul li,
+.minimal .purerecipe  ul.ingredients li {
+    background: url("images/checkbox_no.png") no-repeat scroll left 6px transparent;
+    padding-left:20px;
+    cursor: pointer;
+}
+.rtl .minimal .purerecipe  .instructions ul li,
+.rtl .minimal .purerecipe  ul.ingredients li {
+    background: url("images/checkbox_no.png") no-repeat scroll right 6px transparent;
+    padding-left:0px;
+    padding-right:20px;
+}
+
+.minimal .purerecipe .instructions ul li.active,
+.minimal .purerecipe ul.ingredients li.active {
+    background: url("images/checkbox_yes.png") no-repeat scroll left 6px transparent;
+    padding-left:20px;
+    text-decoration: line-through
+}
+.rtl .minimal .purerecipe .instructions ul li.active,
+.rtl .minimal .purerecipe ul.ingredients li.active {
+    background: url("images/checkbox_yes.png") no-repeat scroll right 6px transparent;
+    padding-left:0px;
+    padding-right:20px;
+}
+.minimal .purerecipe .recipe-add-data {
+
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+
+.minimal .purerecipe  .recipe-image {
+    background: #eee;
+    float: right;
+    margin: 0px 0 0 20px;
+    padding: 5px;
+    position: static;
+}
+.minimal .purerecipe .recipe-content {
+    position:relative;
+    padding: 0 0px 45px;
+    font-size:14px;
+    overflow:visible
+}
+
+.minimal .ingredients-container {
+   background: url("images/double-line.png") repeat-x scroll center top transparent;
+   padding-top: 20px;
+   margin-top: 20px;
+   margin-bottom: 15px;
+}
+
+.minimal .instructions ul,
+.minimal ul.ingredients {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.minimal ol.ingredients {
+    margin: 0px;
+    padding: 0px;
+}
+
+.minimal ul.ingredients li.separator {
+    background: none repeat scroll 0 0 transparent;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+    padding-left: 0;
+}

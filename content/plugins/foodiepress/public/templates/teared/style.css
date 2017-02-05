@@ -1,0 +1,199 @@
+@import url(http://fonts.googleapis.com/css?family=Satisfy);
+
+.purerecipe-wrapper.teared {
+    -moz-transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+    background: url("images/teared-bg.png") repeat scroll left top transparent;
+    padding: 0;
+    margin: 40px 0px;
+}
+
+.teared .purerecipe {
+    -moz-transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+    border-color: #DDDDDD;
+    border-style: solid;
+    margin-top: -14px;
+    margin-bottom: 0px;
+    border-width: 0px 1px 1px 1px;
+    box-shadow: 2px 3px 3px #DDDDDD;
+}
+
+
+.teared header {
+    background: url('images/teared-bg-top.png') repeat top left;
+    padding: 40px 30px 10px;
+    width: 100%;
+
+}
+
+.teared p.author-data {
+    padding: 0px;
+    font-size: 11px;
+    font-style: italic;
+}
+
+
+.teared h4,
+.teared h3 {
+    font-family: 'Satisfy', cursive;
+    font-size:30px;
+}
+
+.teared h4 {
+    margin:0px 0px 15px;
+    padding:15px 0px 0px 0px;
+    font-size:24px;
+    font-weight: normal;
+}
+
+.teared .recipe-content {
+    background: url('images/teared-bg.png') repeat top left;
+    overflow: hidden;
+}
+
+.teared ul li.separator {
+    background: none repeat scroll 0 0 transparent;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+    padding-left: 0;
+}
+
+
+.teared .recipe-content {
+    padding: 0px 30px 20px;
+    overflow: hidden;
+}
+
+.teared ul.ingredients {
+    width:70%;
+}
+
+.teared .instructions ul li,
+.teared ul.ingredients li {
+    background: url("images/checkbox.png") no-repeat scroll left 6px transparent;
+    padding-left:20px;
+    cursor: pointer
+}
+
+
+
+.teared .instructions ul li.active,
+.teared ul.ingredients li.active {
+    background: url("images/checkbox-checked.png") no-repeat scroll left 6px transparent;
+    padding-left:20px;
+    text-decoration: line-through
+}
+.rtl .teared .instructions ul li.active,
+.rtl .teared ul.ingredients li.active {
+    background: url("images/checkbox-checked.png") no-repeat scroll right 6px transparent;
+    padding-left: 0px;
+    padding-right: 20px;
+    text-decoration: line-through
+}
+
+.rtl .teared .recipe-add-data {
+    float: left;
+}
+.teared .recipe-add-data {
+    background: url("images/yellowcard-bg.png") no-repeat scroll right top #FFFF9E;
+    width:225px;
+    float: right;
+    position: relative;
+    padding:20px;
+    font-size:14px;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.3);
+}
+
+.teared .recipe-add-data ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.teared .recipe-add-data ul li {
+    margin: 4px 0px;
+}
+
+.teared .recipe-add-data em {
+    background: url('images/penball-line.png') repeat-x bottom;
+}
+.rtl .teared .recipe-content:before {
+    display: none;
+}
+
+.teared .recipe-content:before {
+    background: url("images/coffe-stain.png") no-repeat scroll left top transparent;
+    content: "";
+    display: block;
+    height: 360px;
+    position: absolute;
+    right: 0;
+    top: 160px;
+    width: 139px;
+}
+
+.teared .recipe-add-data:before {
+    background: url("images/pin-right.png") no-repeat scroll left top transparent;
+    content: "";
+    display: block;
+    height: 70px;
+    position: absolute;
+    right: 41px;
+    top: -15px;
+    width: 57px;
+    z-index: 9999;
+}
+
+.teared header {
+    overflow: hidden;
+}
+
+.teared header div {
+    float: left;
+}
+
+.teared .recipe-image {
+    padding: 5px;
+    background: #fff;
+    float: right;
+    margin-top: -35px;
+    -moz-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.3);
+}
+
+.teared ul.ingredients,
+.teared .instructions ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.rtl .teared .instructions ul li,
+.rtl .teared ul.ingredients li {
+    background: url("images/checkbox.png") no-repeat scroll right 6px transparent;
+    padding-left: 0px;
+    padding-right: 20px;
+}
+
+.teared .instructions ul li,
+.teared ul.ingredients li {
+    background: url("images/checkbox.png") no-repeat scroll left 6px transparent;
+    padding-left: 20px;
+    cursor: pointer;
+    margin: 4px 0px;
+}
+.teared ul.ingredients li a {
+    text-decoration: underline;
+}
+.teared ul.ingredients li.separator {
+    background: none repeat scroll 0 0 transparent;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+    padding-left: 0;
+}
